@@ -3,7 +3,7 @@ davmail-docker
 
 [Davmail](http://davmail.sourceforge.net/) running inside [docker](http://docker.io).
 
-Do you trust Java? Me either. Use this docker container to run davmail locally
+Do you trust Java?  Me either.  Use this docker container to run davmail locally
 and connect to your Exchange email provider.
 
 Usage
@@ -25,10 +25,10 @@ from this Dockerfile.
 
 To use the image:
 
-    $ docker pull gondoi/davmail
+    $ docker pull gimoh/davmail
     $ # exposing a system port is deprecated and must be done at the command
     $ # line now as of 0.6.6
-    $ docker run -d -p 127.0.0.1:1025:1025 -p <ip>:<hostport>:<containerport> -v ~/.davmail:/etc/davmail gondoi/davmail
+    $ docker run -d -p 127.0.0.1:1025:1025 -p <ip>:<hostport>:<containerport> -v ~/.davmail:/etc/davmail gimoh/davmail
 
 To tweak and build your own:
 
